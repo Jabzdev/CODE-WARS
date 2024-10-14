@@ -15,7 +15,7 @@ function noSpace(x) {
 
 //#2
 function noSpace(x) {
-  return x.split(" ").join("");
+  return x.split(" ");
 }
 
 //#3
