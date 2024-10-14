@@ -30,3 +30,4 @@ const squareDigits = (num) =>
       .map((x) => x ** 2)
       .join("")
   );
+//end
