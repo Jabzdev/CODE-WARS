@@ -7,9 +7,20 @@ solution([1, 2, 10, 50, 5]); // should return [1,2,5,10,50]
 solution(null); // should return []
 */
 
+//My solution
+//#1
 function solution(nums) {
-  if (nums === null) {
-    return [];
+  if (nums !== null) {
+    return nums.sort((a, b) => a - b);
   }
-  return nums.sort((a, b) => a - b);
+  return [];
+}
+
+//#2
+function solution(nums) {
+  return nums !== null
+    ? nums.sort(function (a, b) {
+        return a - b;
+      })
+    : [];
 }
