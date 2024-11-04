@@ -11,25 +11,25 @@ Example: (input --> output)
 //My solution
 
 //#1
-// function dnaStrand(dna) {
-//   const complements = {
-//     A: "T",
-//     T: "A",
-//     C: "G",
-//     G: "C",
-//   };
-//   return dna
-//     .split("")
-//     .map((letter) => complements[letter])
-//     .join("");
-// }
+function dnaStrand(dna) {
+  const complements = {
+    A: "T",
+    T: "A",
+    C: "G",
+    G: "C",
+  };
+  return dna
+    .split("")
+    .map((letter) => complements[letter])
+    .join("");
+}
 
-// //#2
-// function DNAStrand(dna) {
-//   return dna
-//     .replace(/A/g, "t")
-//     .replace(/T/g, "a")
-//     .replace(/C/g, "g")
-//     .replace(/G/g, "c")
-//     .toUpperCase();
-// }
+//#2
+function DNAStrand(dna) {
+  return dna
+    .replace(/A/g, "t")
+    .replace(/T/g, "a")
+    .replace(/C/g, "g")
+    .replace(/G/g, "c")
+    .toUpperCase();
+}
