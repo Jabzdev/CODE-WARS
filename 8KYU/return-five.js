@@ -12,3 +12,8 @@ function unusualFive() {
   const arr = ["a", "b", "c", "d", "e", "f"];
   return arr.indexOf("f");
 }
+
+//#2
+function unusualFive() {
+  return "Allah".length;
+}
