@@ -36,3 +36,16 @@ function nbYear(p0, percent, aug, p) {
   }
   return years;
 }
+
+//#2
+function nb_Year(p0, percent, aug, p) {
+  let years = 0;
+  percent = percent / 100;
+
+  while (p0 < p) {
+    p0 += Math.floor(p0 * percent + aug);
+    years++;
+  }
+
+  return years;
+}
