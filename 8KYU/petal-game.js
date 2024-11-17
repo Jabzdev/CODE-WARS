@@ -26,5 +26,5 @@ function howMuchILoveYou(nbPetals) {
     "not at all",
   ];
 
-  return phrases[(nbPetals - 1) % 6];
+  return phrases[(nbPetals - 1) % phrases.length];
 }
