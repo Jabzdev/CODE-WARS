@@ -14,6 +14,11 @@ function filter_list(l) {
 }
 
 //#2
+function filter_FileList(l) {
+  return l.filter((c) => typeof c != "string");
+}
+
+//#3
 function filter_list(l) {
   return l.filter(Number.isInteger);
 }
