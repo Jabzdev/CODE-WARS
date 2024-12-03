@@ -18,3 +18,8 @@ function mostLikely(prob1, prob2) {
   // Compare the probabilities by cross multiplication
   return num1 * den2 > num2 * den1;
 }
+
+//#2
+const divide = (a, b) => a / b;
+const mostLikely = (p1, p2) =>
+  divide(...p1.split(":")) > divide(...p2.split(":"));
